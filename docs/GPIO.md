@@ -27,6 +27,9 @@
   * motivation: a critical section is not required in general,
   but can be added around the function call if necessary.
 
+In some rare cases you can also use binband region or atomics to access shared GPIO registers
+in a safe way without critical sections.
+
 ## Alternate function setup
 
 * Pass GPIO registers explicitly (F1, F3, L4)
